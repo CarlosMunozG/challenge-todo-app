@@ -7,6 +7,7 @@ class ToDoUpdate extends Component {
   state = {
     title: '',
     body: '',
+    _id: '',
     redirect: false,
     error: '',
   }
@@ -20,6 +21,7 @@ class ToDoUpdate extends Component {
       this.setState({
         title,
         body,
+        _id: id,
       })
     })
   }
